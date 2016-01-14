@@ -1,5 +1,5 @@
 hook.Add("PlayerInitialSpawn","lastjoin",function(ply) 
-	local lastjoin = ply:GetPData("lastjoined", "") 
+	local lastjoin = ply:GetPData("lastjoined") 
 	if lastjoin then
 		BroadcastMsg(Color(80, 251, 80), "● ", Color(255,255,255), ply:Nick() .. "(" .. ply:SteamID() .. ")" .. " has ", Color(80, 251, 80), "joined\n", Color(80, 80, 80), "● ", Color(255,255,255), "Last seen " .. lastjoin)
 	else
